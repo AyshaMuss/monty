@@ -90,7 +90,19 @@ void read_lines(void);
 void op_helper(stack_t **stack, char *opcode);
 void free_stack(stack_t *head);
 void garbage_collection(void);
-
+void pall(stack_t **stack, unsigned int line_number);
+void push(stack_t **stack, unsigned int line_number);
+void functions_monty(stack_t **stack, char *command_f, unsigned int line_numb);
+void pint(stack_t **stack, unsigned int line_number);
+void pop(stack_t **stack, unsigned int line_number);
+void swap(stack_t **stack, unsigned int line_number);
+void add(stack_t **stack, unsigned int line_number);
+void nop(stack_t **stack, unsigned int line_number);
+void sub(stack_t **stack, unsigned int line_number);
+void _div(stack_t **stack, unsigned int line_number);
+void mul(stack_t **stack, unsigned int line_number);
+void mod(stack_t **stack, unsigned int line_number);
+void free_malloc(stack_t *head);
 /* main_helpers_2 */
 void push_add_node_end(char *value);
 
